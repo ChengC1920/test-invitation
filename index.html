@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>唐华成 & 商琦晗 - 订婚邀请函</title>
+    <!-- 微信分享优化 -->
+    <meta itemprop="name" content="唐华成 & 商琦晗的订婚邀请函">
+    <meta itemprop="description" content="诚邀您于2024年5月16日参加我们的订婚宴">
+    <meta itemprop="image" content="https://您的网站地址/couple-photo.jpg">
+    <!-- 微信分享缩略图 -->
+    <meta property="og:title" content="唐华成 & 商琦晗的订婚邀请函">
+    <meta property="og:description" content="诚邀您于2024年5月16日参加我们的订婚宴">
+    <meta property="og:image" content="https://您的网站地址/couple-photo.jpg">
+    <meta property="og:url" content="https://您的网站地址">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Serif SC', serif;
+            background-color: #f9f3f0;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .invitation-card {
+            background: linear-gradient(135deg, #fff, #f8f4f2);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+            margin-top: 50px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #d4af7a, #b78d59);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header h1 {
+            font-family: 'Ma Shan Zheng', cursive;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            animation: shimmer 3s infinite;
+            background: linear-gradient(90deg, #fff, #f0e6d2, #fff);
+            background-size: 200% auto;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        
+        @keyframes shimmer {
+            to { background-position: 200% center; }
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0;
+            animation: slideIn 1s ease-out forwards;
+            animation-delay: 0.5s;
+        }
+        
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .couple-photo {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-bottom: 5px solid #d4af7a;
+            transition: transform 0.5s ease;
+        }
+        
+        .couple-photo:hover {
+            transform: scale(1.02);
+        }
+        
+        .content {
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .names {
+            font-family: 'Ma Shan Zheng', cursive;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: #b78d59;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .names span {
+            margin: 0 10px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .heart {
+            color: #d4726a;
+            font-size: 1.8rem;
+            margin: 0 15px;
+            animation: heartbeat 1.5s infinite;
+        }
+        
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+            75% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .date-time {
+            font-size: 1.3rem;
+            margin: 30px 0;
+            color: #555;
+        }
+        
+        .date-time .highlight {
+            color: #b78d59;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        
+        .message {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin: 30px 0;
+            padding: 0 20px;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #d4af7a, #b78d59);
+            color: white;
+        }
+        
+        .footer p {
+            margin-bottom: 10px;
+        }
+        
+        .decoration {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M50 0 L50 100 M0 50 L100 50" stroke="rgba(255,255,255,0.2)" stroke-width="1"/></svg>');
+            background-size: 20px 20px;
+            opacity: 0.3;
+            z-index: 0;
+        }
+        
+        .decoration-1 {
+            top: -50px;
+            left: -50px;
+            transform: rotate(45deg);
+        }
+        
+        .decoration-2 {
+            bottom: -50px;
+            right: -50px;
+            transform: rotate(45deg);
+        }
+        
+        .rsvp {
+            margin-top: 30px;
+            padding: 15px 30px;
+            background-color: #b78d59;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(183, 141, 89, 0.3);
+        }
+        
+        .rsvp:hover {
+            background-color: #a67c48;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(183, 141, 89, 0.4);
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .names {
+                font-size: 1.8rem;
+                flex-direction: column;
+            }
+            
+            .heart {
+                margin: 10px 0;
+            }
+            
+            .couple-photo {
+                height: 300px;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+        }
+        
+        /* 花瓣动画 */
+        .petals-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .petal {
+            position: absolute;
+            background-color: rgba(212, 175, 122, 0.3);
+            border-radius: 150% 0 150% 0;
+            animation: falling linear infinite;
+        }
+        
+        @keyframes falling {
+            0% {
+                top: -10%;
+                transform: rotate(0deg) translateX(0);
+            }
+            100% {
+                top: 100%;
+                transform: rotate(360deg) translateX(100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="invitation-card">
+            <div class="header">
+                <div class="decoration decoration-1"></div>
+                <h1>订婚邀请函</h1>
+                <p>诚邀您参加我们的订婚宴</p>
+                <div class="decoration decoration-2"></div>
+            </div>
+            
+            <img src="couple-photo.jpg" alt="唐华成 & 商琦晗" class="couple-photo">
+            
+            <div class="content">
+                <div class="names">
+                    <span>唐华成</span>
+                    <div class="heart">♥</div>
+                    <span>商琦晗</span>
+                </div>
+                
+                <div class="date-time">
+                    <p>我们诚挚地邀请您</p>
+                    <p>于 <span class="highlight">2024年5月16日</span> 参加我们的订婚宴</p>
+                </div>
+                
+                <div class="message">
+                    <p>缘分让我们相遇，</p>
+                    <p>爱情让我们相知。</p>
+                    <p>在这特别的日子里，</p>
+                    <p>我们希望您能与我们一同分享这份喜悦。</p>
+                </div>
+                
+                <button class="rsvp">确认出席</button>
+            </div>
+            
+            <div class="footer">
+                <p>期待您的到来</p>
+                <p>联系电话：请添加您的联系方式</p>
+            </div>
+            
+            <div class="petals-container" id="petals-container"></div>
+        </div>
+    </div>
+    
+    <!-- 添加微信分享按钮 -->
+    <div class="container" style="margin-top: 30px; text-align: center;">
+        <button id="shareBtn" class="rsvp" style="background-color: #07C160;">分享到微信</button>
+    </div>
+    
+    <script>
+        // 创建花瓣动画
+        const petalsContainer = document.getElementById('petals-container');
+        const petalCount = 30;
+        
+        for (let i = 0; i < petalCount; i++) {
+            createPetal();
+        }
+        
+        function createPetal() {
+            const petal = document.createElement('div');
+            petal.classList.add('petal');
+            
+            // 随机大小
+            const size = Math.random() * 15 + 10;
+            petal.style.width = `${size}px`;
+            petal.style.height = `${size}px`;
+            
+            // 随机位置
+            petal.style.left = `${Math.random() * 100}%`;
+            
+            // 随机透明度
+            petal.style.opacity = Math.random() * 0.6 + 0.2;
+            
+            // 随机动画时长和延迟
+            const duration = Math.random() * 10 + 8;
+            const delay = Math.random() * 5;
+            petal.style.animationDuration = `${duration}s`;
+            petal.style.animationDelay = `${delay}s`;
+            
+            petalsContainer.appendChild(petal);
+            
+            // 动画结束后重新创建
+            setTimeout(() => {
+                petal.remove();
+                createPetal();
+            }, (duration + delay) * 1000);
+        }
+        
+        // 添加RSVP按钮功能
+        document.querySelector('.rsvp').addEventListener('click', function() {
+            alert('感谢您的确认！我们期待您的到来。');
+        });
+        
+        // 添加微信分享功能
+        document.getElementById('shareBtn').addEventListener('click', function() {
+            if (/MicroMessenger/i.test(navigator.userAgent)) {
+                // 在微信内打开
+                alert('请点击右上角"..."按钮，然后选择"分享给朋友"或"分享到朋友圈"');
+            } else {
+                // 不在微信内打开
+                alert('请在微信中打开此页面进行分享');
+            }
+        });
+    </script>
+</body>
+</html>
